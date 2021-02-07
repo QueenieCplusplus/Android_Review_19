@@ -85,8 +85,14 @@ Intent using ShareCompat to share info via Gmail/ SMS
                         )
 
 
+5. data opts
 
-5. output
+
+                     private var nowItem = allItems[0]
+
+
+
+6. output
 
 ![](https://raw.githubusercontent.com/QueenieCplusplus/Android_Review_19/main/2.png)
 
