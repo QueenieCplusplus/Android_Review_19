@@ -123,7 +123,7 @@ Intent using ShareCompat to share info via Gmail/ SMS
                 //也可呼叫 .first() 取值
                 newItem = allItemFromZero.shuffled().last()
 
-改使用泛型更安全：https://ithelp.ithome.com.tw/articles/10239879
+LiveData 則屬於泛型資料類別：https://ithelp.ithome.com.tw/articles/10239879
 
 
 7. output
