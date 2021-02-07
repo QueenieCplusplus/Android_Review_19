@@ -69,13 +69,6 @@ Intent using ShareCompat to share info via Gmail/ SMS
 
 
 
-
-                        // Text UI
-                        private var revenue = 0
-                        private var itemSold = 0
-
-
-
                         private val allItemFromZero = listOf(
 
                             Item(R.drawable.lollipop,55,0),
@@ -89,10 +82,22 @@ Intent using ShareCompat to share info via Gmail/ SMS
 
 
                      private var nowItem = allItems[0]
+                     private var revenue = 0
+                     private var itemSold = 0
+
+                     
+                     
+                     //Update the amount & price
+                     revenue += nowItem.price
+                            
+                     itemSold++
+
+            
+6. List opt                
 
 
 
-6. output
+7. output
 
 ![](https://raw.githubusercontent.com/QueenieCplusplus/Android_Review_19/main/2.png)
 
