@@ -123,7 +123,7 @@ Intent using ShareCompat to share info via Gmail/ SMS
                 //也可呼叫 .first() 取值
                 newItem = allItemFromZero.shuffled().last()
 
-LiveData 則屬於泛型資料類別：https://ithelp.ithome.com.tw/articles/10239879
+LiveData 則屬於泛型資料類別：https://ithelp.ithome.com.tw/articles/10239879 免除為龍蛇雜燴的集合工具做轉型運算的煩惱。
 
 
 7. output
