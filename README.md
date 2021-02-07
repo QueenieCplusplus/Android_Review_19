@@ -53,9 +53,28 @@ Intent using ShareCompat to share info via Gmail/ SMS
          }
 
 
+4. List
 
 
-3. output
+
+
+                        // Text UI
+                        private var revenue = 0
+                        private var itemSold = 0
+
+
+
+                        private val allItemFromZero = listOf(
+
+                            Item(R.drawable.lollipop,55,0),
+                            Item(R.drawable.marchmello, 45,0),
+                            Item(R.drawable.oreo, 38, 0)
+
+                        )
+
+
+
+5. output
 
 ![](https://raw.githubusercontent.com/QueenieCplusplus/Android_Review_19/main/2.png)
 
