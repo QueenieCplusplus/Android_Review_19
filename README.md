@@ -2,7 +2,7 @@
 Intent using ShareCompat to share info via Gmail/ SMS
 
 
-1. code 
+1. share
 
 
           import androidx.core.app.ShareCompat
@@ -14,7 +14,48 @@ Intent using ShareCompat to share info via Gmail/ SMS
                                    .intent
 
 
-2. output
+2. data loop
+
+
+       private fun showNowItem(){
+       
+                 
+                 // allItems is a listOf array.
+
+                  var newItem = allItems[0]
+                  
+                  
+                  // Loop
+
+                  for (i in allItems) {
+
+                      if (itemSold >= i.startProductionAmount) {
+                      
+                          newItem = i // 迴圈的任何元素裝進 newItem 容器中
+
+                      }
+          
+                      else break
+                  }
+
+                  // If the new data is actually different than the current data
+                  // update the data info
+                  
+                  if (newItem != nowItem) { // 倘若等號前後不相等則...
+
+                      nowItem = newItem
+
+                      binding.dessertButton.setImageResource(newItem.imageId)
+                      binding.amountSold = newItem.startProductionAmount
+                      binding.revenue = newItem.price
+                  }
+
+         }
+
+
+
+
+3. output
 
 ![](https://raw.githubusercontent.com/QueenieCplusplus/Android_Review_19/main/2.png)
 
