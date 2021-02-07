@@ -93,7 +93,35 @@ Intent using ShareCompat to share info via Gmail/ SMS
                      itemSold++
 
             
-6. List opt                
+6. List opt 
+
+
+  
+               // 建立集合或是陣列？
+               data class Item (
+
+                                  val imageId: Int,
+                                  val price: Int,
+                                  val amount: Int
+
+                              )
+
+               // 建立集合
+               private val allItemFromZero = listOf(
+
+                       Item(R.drawable.lollipop,55,0),
+                       Item(R.drawable.marchmello, 45,0),
+                       Item(R.drawable.oreo, 38, 0)
+
+                )
+
+
+                // 建立容器
+                var newItem = allItemFromZero[0]
+
+                // 集合方法：隨機（）
+                //也可呼叫 .first() 取值
+                newItem = allItemFromZero.shuffled().last()
 
 
 
