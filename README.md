@@ -57,6 +57,18 @@ Intent using ShareCompat to share info via Gmail/ SMS
 
 
 
+              // 資料類別確定了資料的型別，倘若呼叫 Item 時。
+              
+               data class Item (
+
+                                  val imageId: Int,
+                                  val price: Int,
+                                  val amount: Int
+
+                              )
+
+
+
 
                         // Text UI
                         private var revenue = 0
